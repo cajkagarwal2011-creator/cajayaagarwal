@@ -30,14 +30,16 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "CA Jaya Agarwal" },
+      { name: "description", content: "A conversion-focused website for a Chartered Accountant firm, designed to generate leads and inquiries." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "CA Jaya Agarwal" },
+      { property: "og:description", content: "A conversion-focused website for a Chartered Accountant firm, designed to generate leads and inquiries." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "CA Jaya Agarwal" },
+      { name: "twitter:description", content: "A conversion-focused website for a Chartered Accountant firm, designed to generate leads and inquiries." },
     ],
     links: [
       {
