@@ -8,7 +8,7 @@ import { CheckCircle2, ShieldCheck, Award, Users, Clock } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Cajaya Agarwal & Co. Chartered Accountants" },
+      { title: "About — Jaya K. Agarwal & Co. Chartered Accountants" },
       { name: "description", content: "A modern CA firm helping startups, SMEs and professionals stay compliant and save tax with personalized, on-time service." },
     ],
   }),
@@ -21,7 +21,7 @@ function AboutPage() {
       <Navbar />
       <section className="bg-surface-alt border-b border-border">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center">
-          <h1 className="text-4xl font-bold text-primary md:text-5xl">About Cajaya Agarwal &amp; Co.</h1>
+          <h1 className="text-4xl font-bold text-primary md:text-5xl">About Jaya K. Agarwal &amp; Co.</h1>
           <p className="mt-4 text-muted-foreground">A modern Chartered Accountancy firm built around one promise — make tax & compliance simple.</p>
         </div>
       </section>

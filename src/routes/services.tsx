@@ -12,7 +12,7 @@ import {
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — GST, Income Tax, TDS, Audit & Advisory | Cajaya Agarwal & Co." },
+      { title: "Services — GST, Income Tax, TDS, Audit & Advisory | Jaya K. Agarwal & Co." },
       { name: "description", content: "End-to-end CA services: GST, Income Tax, TDS, business compliance, accounting, audit and advisory for Indian businesses." },
     ],
   }),

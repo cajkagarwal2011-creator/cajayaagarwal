@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Calculator, Menu, X } from "lucide-react";
 import { useState } from "react";
 
-const WHATSAPP_URL = "https://wa.me/919999999999?text=Hi%2C%20I%20need%20help%20with%20tax%20%26%20compliance";
+const WHATSAPP_URL = "https://wa.me/917667559772?text=Hi%2C%20I%20need%20help%20with%20tax%20%26%20compliance";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -19,7 +19,7 @@ export function Navbar() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2 font-semibold text-primary">
           <Calculator className="h-5 w-5 text-accent" />
-          <span className="tracking-tight">Cajaya Agarwal &amp; Co.</span>
+          <span className="tracking-tight">Jaya K. Agarwal &amp; Co.</span>
         </Link>
         <div className="hidden items-center gap-7 md:flex">
           {links.map((l) => (

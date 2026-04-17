@@ -30,13 +30,13 @@ import { LeadForm } from "@/components/site/LeadForm";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cajaya Agarwal & Co. — Chartered Accountants | GST, ITR, TDS, Audit" },
+      { title: "Jaya K. Agarwal & Co. — Chartered Accountants | GST, ITR, TDS, Audit" },
       {
         name: "description",
         content:
           "Trusted CA firm helping businesses stay compliant and stress-free. GST, Income Tax, TDS, audit, accounting & advisory. Book a free consultation today.",
       },
-      { property: "og:title", content: "Cajaya Agarwal & Co. — Chartered Accountants" },
+      { property: "og:title", content: "Jaya K. Agarwal & Co. — Chartered Accountants" },
       {
         property: "og:description",
         content: "Avoid penalties. Save tax. Stay compliant. Talk to a CA today.",
@@ -178,7 +178,7 @@ function HomePage() {
       <section className="border-y border-border bg-surface-alt">
         <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:grid-cols-2 md:grid-cols-4">
           {[
-            { k: "10+", v: "Years of Experience" },
+            { k: "15+", v: "Years of Experience" },
             { k: "500+", v: "Clients Served" },
             { k: "100%", v: "Timely Compliance" },
             { k: "4.9★", v: "Client Satisfaction" },
@@ -246,10 +246,10 @@ function HomePage() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">About the Firm</p>
             <h2 className="mt-2 text-3xl font-bold text-primary md:text-4xl">
-              A modern CA firm that actually picks up the phone
+              A new-age CA firm that believes in clarity, responsiveness, trust, and real support.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Cajaya Agarwal &amp; Co. is a Chartered Accountancy firm helping startups, SMEs,
+              Jaya K. Agarwal &amp; Co. is a Chartered Accountancy firm helping startups, SMEs,
               and professionals manage tax and compliance without the usual chaos.
               We combine deep expertise with clear communication and on-time delivery.
             </p>
@@ -278,7 +278,7 @@ function HomePage() {
               “Our goal is simple — make tax and compliance the least stressful part
               of running your business.”
             </p>
-            <p className="mt-4 text-sm text-muted-foreground">— The Cajaya Agarwal &amp; Co. Team</p>
+            <p className="mt-4 text-sm text-muted-foreground">— The Jaya K. Agarwal &amp; Co. Team</p>
           </div>
         </div>
       </section>

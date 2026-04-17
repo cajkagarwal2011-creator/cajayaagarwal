@@ -8,7 +8,7 @@ import { Mail, Phone, MapPin, MessageCircle, Clock } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Book a Free Consultation | Cajaya Agarwal & Co." },
+      { title: "Contact — Book a Free Consultation | Jaya K. Agarwal & Co." },
       { name: "description", content: "Talk to a Chartered Accountant. Book a free consultation or chat with us on WhatsApp for GST, ITR, TDS, audit and advisory." },
     ],
   }),
@@ -34,9 +34,9 @@ function ContactPage() {
           <div className="rounded-2xl border border-border bg-surface-alt p-6">
             <h2 className="text-lg font-semibold text-primary">Reach us directly</h2>
             <ul className="mt-4 space-y-3 text-sm">
-              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /> +91 99999 99999</li>
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /> hello@cajaya.in</li>
-              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> India</li>
+              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /> +91-7667559772</li>
+              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /> ca.jkagarwal2011@gmail.com</li>
+              <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-accent mt-0.5" /> G-4, Malviya Nagar, New Delhi</li>
               <li className="flex items-center gap-2"><Clock className="h-4 w-4 text-accent" /> Mon–Sat, 10am–7pm IST</li>
             </ul>
             <a
