@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Calculator, Menu, X } from "lucide-react";
 import { useState } from "react";
 
-const WHATSAPP_URL = "https://wa.me/917667559772?text=Hi%2C%20I%20need%20help%20with%20tax%20%26%20compliance";
+const WHATSAPP_URL = "https://wa.me/917667559772";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
