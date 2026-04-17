@@ -8,7 +8,7 @@ export function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 text-lg font-semibold">
             <Calculator className="h-5 w-5 text-accent" />
-            Cajaya Agarwal &amp; Co.
+            Jaya K. Agarwal &amp; Co.
           </div>
           <p className="mt-3 max-w-md text-sm text-primary-foreground/75">
             Chartered Accountants helping businesses stay compliant, save tax, and
@@ -26,14 +26,14 @@ export function Footer() {
         <div>
           <h4 className="mb-3 text-sm font-semibold">Get in touch</h4>
           <ul className="space-y-2 text-sm text-primary-foreground/75">
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /> +91 99999 99999</li>
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /> hello@cajaya.in</li>
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> India</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /> +91-7667559772</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /> ca.jkagarwal2011@gmail.com</li>
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-accent mt-0.5" /> G-4, Malviya Nagar, New Delhi</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-primary-foreground/10 py-4 text-center text-xs text-primary-foreground/60">
-        © {new Date().getFullYear()} Cajaya Agarwal &amp; Co. All rights reserved.
+        © {new Date().getFullYear()} Jaya K. Agarwal &amp; Co. All rights reserved.
       </div>
     </footer>
   );
