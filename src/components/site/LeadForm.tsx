@@ -5,12 +5,24 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { ShieldCheck, Clock } from "lucide-react";
 import { WHATSAPP_URL } from "./Navbar";
 
 const schema = z.object({
   name: z.string().trim().min(2, "Please enter your name").max(100),
-  email: z.string().trim().email("Enter a valid email").max(255),
-  phone: z.string().trim().min(7, "Enter a valid phone").max(20),
+  phone: z
+    .string()
+    .trim()
+    .min(7, "Enter a valid phone number")
+    .max(20)
+    .regex(/^[0-9+\-\s()]+$/, "Enter a valid phone number"),
+  email: z
+    .string()
+    .trim()
+    .max(255)
+    .email("Enter a valid email")
+    .optional()
+    .or(z.literal("")),
   message: z.string().trim().max(1000).optional(),
 });
 
@@ -22,8 +34,8 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
     const fd = new FormData(e.currentTarget);
     const parsed = schema.safeParse({
       name: fd.get("name"),
-      email: fd.get("email"),
       phone: fd.get("phone"),
+      email: fd.get("email") ?? "",
       message: fd.get("message") ?? "",
     });
     if (!parsed.success) {
@@ -40,40 +52,73 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
 
   return (
     <form onSubmit={onSubmit} className="space-y-4">
-      <div className={compact ? "grid gap-4" : "grid gap-4 sm:grid-cols-2"}>
-        <div className="space-y-1.5">
-          <Label htmlFor="name">Name</Label>
-          <Input id="name" name="name" placeholder="Your full name" required />
-        </div>
-        <div className="space-y-1.5">
-          <Label htmlFor="phone">Phone</Label>
-          <Input id="phone" name="phone" type="tel" placeholder="+91 ..." required />
-        </div>
+      <div className="space-y-1.5">
+        <Label htmlFor="name">Name</Label>
+        <Input
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          autoComplete="name"
+          required
+          className="h-11"
+        />
       </div>
       <div className="space-y-1.5">
-        <Label htmlFor="email">Email</Label>
-        <Input id="email" name="email" type="email" placeholder="you@company.com" required />
+        <Label htmlFor="phone">Phone number</Label>
+        <Input
+          id="phone"
+          name="phone"
+          type="tel"
+          inputMode="tel"
+          placeholder="+91 ..."
+          autoComplete="tel"
+          required
+          className="h-11"
+        />
       </div>
       {!compact && (
-        <div className="space-y-1.5">
-          <Label htmlFor="message">How can we help? (optional)</Label>
-          <Textarea id="message" name="message" placeholder="GST, ITR, audit, advisory..." rows={4} />
-        </div>
+        <>
+          <div className="space-y-1.5">
+            <Label htmlFor="email" className="flex items-center justify-between">
+              <span>Email</span>
+              <span className="text-xs font-normal text-muted-foreground">Optional</span>
+            </Label>
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@company.com"
+              autoComplete="email"
+              className="h-11"
+            />
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="message">How can we help? (optional)</Label>
+            <Textarea id="message" name="message" placeholder="GST, ITR, audit, advisory..." rows={4} />
+          </div>
+        </>
       )}
       <div className="flex flex-col gap-3 sm:flex-row">
-        <Button type="submit" disabled={loading} className="w-full sm:w-auto">
-          {loading ? "Sending..." : "Get Free Consultation"}
+        <Button type="submit" disabled={loading} size="lg" className="w-full sm:w-auto">
+          {loading ? "Sending..." : "Talk to a CA Now"}
         </Button>
         <a
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-9 items-center justify-center rounded-md bg-whatsapp px-4 text-sm font-medium text-whatsapp-foreground transition-colors hover:opacity-90"
+          className="inline-flex h-11 items-center justify-center rounded-md bg-whatsapp px-4 text-sm font-medium text-whatsapp-foreground transition-colors hover:opacity-90"
         >
           Chat on WhatsApp
         </a>
       </div>
-      <p className="text-xs text-muted-foreground">No spam. Your details stay private.</p>
+      <div className="space-y-1.5 pt-1">
+        <p className="flex items-center gap-1.5 text-xs font-medium text-accent">
+          <Clock className="h-3.5 w-3.5" /> Get a response within 1 business day
+        </p>
+        <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+          <ShieldCheck className="h-3.5 w-3.5" /> 100% confidential · No spam · No obligation
+        </p>
+      </div>
     </form>
   );
 }
