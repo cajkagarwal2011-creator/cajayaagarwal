@@ -340,14 +340,13 @@ function HomePage() {
       {/* FINAL CTA */}
       <section className="relative overflow-hidden text-primary-foreground" style={{ background: "var(--gradient-hero)" }}>
         <div className="mx-auto max-w-4xl px-4 py-20 text-center">
-          <h2 className="text-3xl font-bold md:text-4xl">Need help with taxes or compliance?</h2>
+          <h2 className="text-3xl font-bold md:text-4xl">Still Paying More Tax Than You Should?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">
-            Talk to a Chartered Accountant today. Get clear answers, honest pricing, and
-            a plan that keeps your business penalty-free.
+            Talk to a Chartered Accountant and get a clear plan to save tax and stay compliant.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link to="/contact">Book Free Consultation</Link>
+              <Link to="/contact">Talk to a CA Now <ArrowRight className="ml-1 h-4 w-4" /></Link>
             </Button>
             <a
               href={WHATSAPP_URL}
