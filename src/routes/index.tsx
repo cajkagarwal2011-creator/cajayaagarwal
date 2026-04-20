@@ -49,38 +49,38 @@ export const Route = createFileRoute("/")({
 const services = [
   {
     icon: Receipt,
-    title: "GST Compliance",
-    benefit: "Avoid GST penalties with end-to-end registration, monthly filing, and reconciliation support.",
+    title: "GST Filing Without Penalties & Notices",
+    benefit: "End-to-end GST registration, monthly filing & reconciliation — done on time, every time.",
   },
   {
     icon: FileText,
-    title: "Income Tax",
-    benefit: "Maximize savings and file ITRs accurately — for individuals, professionals, and companies.",
+    title: "Maximize Tax Savings with Accurate ITR Filing",
+    benefit: "Smart tax planning and accurate ITR filing for individuals, professionals & companies — keep more of what you earn.",
   },
   {
     icon: Wallet,
-    title: "TDS Services",
-    benefit: "Stay penalty-free with timely TDS deduction, deposit, return filing, and corrections.",
+    title: "Error-Free TDS Filing to Avoid Penalties",
+    benefit: "Timely TDS deduction, deposit, returns & corrections — no late fees, no notices, no stress.",
   },
   {
     icon: ShieldCheck,
-    title: "Business Compliance",
-    benefit: "ROC, MCA, and statutory filings handled — so you focus on growth, not paperwork.",
+    title: "Hassle-Free Business Compliance",
+    benefit: "ROC, MCA & statutory filings handled for you — stay compliant while you focus on growth.",
   },
   {
     icon: BookOpenCheck,
-    title: "Accounting & Bookkeeping",
-    benefit: "Clean books every month with reliable accounting that's audit-ready and decision-ready.",
+    title: "Clean, Audit-Ready Books Every Month",
+    benefit: "Reliable monthly bookkeeping that gives you accurate numbers and confidence in every decision.",
   },
   {
     icon: ClipboardCheck,
-    title: "Audit & Assurance",
-    benefit: "Statutory, internal, and tax audits done with accuracy and zero last-minute surprises.",
+    title: "Stress-Free Audits with Zero Surprises",
+    benefit: "Statutory, internal & tax audits handled with accuracy — no last-minute panic, no unexpected findings.",
   },
   {
     icon: Lightbulb,
-    title: "Advisory",
-    benefit: "Smart tax planning and business advisory to help you save more and scale faster.",
+    title: "Smart Advisory to Save Tax & Scale Faster",
+    benefit: "Practical tax planning and business advice that helps you save more and grow with clarity.",
   },
 ];
 
