@@ -251,19 +251,25 @@ function HomePage() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">About the Firm</p>
             <h2 className="mt-2 text-3xl font-bold text-primary md:text-4xl">
-              A new-age CA firm that believes in clarity, responsiveness, trust, and real support.
+              A CA firm that actually feels like a partner — not a paperwork desk.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Jaya K. Agarwal &amp; Co. is a Chartered Accountancy firm helping startups, SMEs,
-              and professionals manage tax and compliance without the usual chaos.
-              We combine deep expertise with clear communication and on-time delivery.
+              At Jaya K. Agarwal &amp; Co., we make tax and compliance simple. No jargon,
+              no chasing for updates, no surprises. Just clear answers, on-time work, and a
+              CA who genuinely understands your business.
+            </p>
+            <p className="mt-3 text-muted-foreground">
+              Whether you're a startup figuring out your first GST return, a growing SME
+              that needs cleaner books, or a professional looking to save more tax — we're
+              the team you can call, message, and rely on.
             </p>
             <ul className="mt-6 space-y-3">
               {[
-                "Expertise across GST, Income Tax, TDS, audit & advisory",
-                "Practical, business-first approach — not just paperwork",
-                "On-time filings, transparent pricing, no hidden surprises",
-                "Dedicated point of contact for every client",
+                "Deep expertise in GST, Income Tax, TDS, audit & advisory",
+                "On-time filings — we track your deadlines so you don't have to",
+                "Transparent pricing with no hidden charges or surprise bills",
+                "A dedicated CA as your single point of contact",
+                "Quick replies on call, WhatsApp & email",
               ].map((p) => (
                 <li key={p} className="flex items-start gap-2 text-sm">
                   <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" />
@@ -280,8 +286,8 @@ function HomePage() {
           <div className="rounded-2xl border border-border bg-surface-alt p-8">
             <Quote className="h-8 w-8 text-accent" />
             <p className="mt-4 text-lg font-medium leading-relaxed text-primary">
-              “Our goal is simple — make tax and compliance the least stressful part
-              of running your business.”
+              “We treat your business like our own — clear advice, honest pricing, and
+              work delivered on time. That's it. That's the promise.”
             </p>
             <p className="mt-4 text-sm text-muted-foreground">— The Jaya K. Agarwal &amp; Co. Team</p>
           </div>
