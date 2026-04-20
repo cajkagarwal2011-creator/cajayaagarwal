@@ -102,19 +102,19 @@ const why = [
 const testimonials = [
   {
     quote:
-      "They took complete ownership of our GST and TDS filings. We haven't received a single notice in over a year.",
+      "We were getting GST notices almost every quarter and constantly stressed about deadlines. Since they took over our filings, it's been over a year — zero notices, zero late fees.",
     name: "Rahul M.",
     role: "Founder, D2C Brand",
   },
   {
     quote:
-      "Quick, responsive, and genuinely helpful. They saved us a meaningful amount on tax with proactive planning.",
+      "Earlier our tax planning was last-minute and reactive. They mapped out a proper plan for the year and helped us save a meaningful amount on our company tax — completely legally.",
     name: "Priya S.",
-    role: "Director, IT Services Pvt. Ltd.",
+    role: "Director, IT Services Business",
   },
   {
     quote:
-      "Finally a CA firm that explains things in plain language. Books are clean, audit was smooth.",
+      "Our books were a mess and audits used to be a nightmare. Now everything is clean every month, the audit was smooth, and they actually explain numbers in plain English.",
     name: "Arjun K.",
     role: "Co-founder, E-commerce Seller",
   },
