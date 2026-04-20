@@ -133,19 +133,20 @@ function HomePage() {
         <div className="mx-auto grid max-w-6xl gap-12 px-4 py-20 md:grid-cols-2 md:py-28">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-accent">
-              <ShieldCheck className="h-3.5 w-3.5" /> Trusted Chartered Accountants
+              <ShieldCheck className="h-3.5 w-3.5" /> Chartered Accountants • 15+ Years Experience
             </span>
             <h1 className="mt-5 text-4xl font-bold leading-tight tracking-tight md:text-5xl">
-              Stop worrying about tax notices, penalties & deadlines.
+              Save More Tax. Legally. <span className="text-accent">Stress-Free.</span>
             </h1>
             <p className="mt-5 max-w-xl text-base text-primary-foreground/80 md:text-lg">
-              We handle GST, Income Tax, TDS, audits and end-to-end business compliance —
-              so you save tax, stay compliant, and focus on growing your business.
+              Expert help with <strong className="text-primary-foreground">GST, Income Tax, TDS & business compliance</strong> for
+              businesses, professionals and individuals — so you save tax, avoid penalties,
+              and get complete peace of mind.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                 <Link to="/contact">
-                  Book Free Consultation <ArrowRight className="ml-1 h-4 w-4" />
+                  Talk to a CA Now <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </Button>
               <a
@@ -154,10 +155,13 @@ function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-white/20 bg-white/5 px-6 text-sm font-medium text-primary-foreground backdrop-blur transition-colors hover:bg-white/10"
               >
-                <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+                <MessageCircle className="h-4 w-4" /> Get Tax Saving Plan
               </a>
             </div>
-            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-primary-foreground/75">
+            <p className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent">
+              <Clock className="h-4 w-4" /> Limited free consultations available this week
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-primary-foreground/75">
               <li className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> 100% confidential</li>
               <li className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> Reply in 1 business day</li>
               <li className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> No obligation</li>
