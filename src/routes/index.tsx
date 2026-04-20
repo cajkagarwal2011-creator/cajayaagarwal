@@ -85,10 +85,10 @@ const services = [
 ];
 
 const audience = [
-  { icon: Rocket, title: "Startups", line: "Get incorporation, tax setup, and compliance — all in one place." },
-  { icon: Building2, title: "SMEs", line: "Reliable monthly compliance, audits, and CFO-level advisory." },
-  { icon: UserRound, title: "Freelancers & Professionals", line: "Simple ITR filing and tax planning that maximizes take-home." },
-  { icon: ShoppingBag, title: "E-commerce Sellers", line: "GST on marketplaces, TCS reconciliation, and accurate books." },
+  { icon: Rocket, title: "Startups", line: "Setup, compliance, and tax handled from day one." },
+  { icon: Building2, title: "SMEs", line: "Reliable monthly compliance and financial clarity to grow with confidence." },
+  { icon: UserRound, title: "Freelancers & Professionals", line: "Maximize take-home income with smart tax planning and easy ITR filing." },
+  { icon: ShoppingBag, title: "E-commerce Sellers", line: "GST, TCS, and marketplace reconciliation handled accurately." },
 ];
 
 const why = [
