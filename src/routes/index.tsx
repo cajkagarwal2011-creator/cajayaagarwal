@@ -183,8 +183,8 @@ function HomePage() {
         <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:grid-cols-2 md:grid-cols-4">
           {[
             { k: "15+", v: "Years of Experience" },
-            { k: "500+", v: "Clients Served" },
-            { k: "100%", v: "Timely Compliance" },
+            { k: "500+", v: "Clients Served Successfully" },
+            { k: "0", v: "Missed Deadlines" },
             { k: "4.9★", v: "Client Satisfaction" },
           ].map((s) => (
             <div key={s.v} className="text-center">
