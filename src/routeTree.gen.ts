@@ -9,14 +9,41 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TdsReturnFilingDelhiRouteImport } from './routes/tds-return-filing-delhi'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as IncomeTaxReturnFilingDelhiRouteImport } from './routes/income-tax-return-filing-delhi'
+import { Route as GstFilingServicesDelhiRouteImport } from './routes/gst-filing-services-delhi'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BusinessComplianceServicesRouteImport } from './routes/business-compliance-services'
+import { Route as AccountingBookkeepingServicesRouteImport } from './routes/accounting-bookkeeping-services'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TdsReturnFilingDelhiRoute = TdsReturnFilingDelhiRouteImport.update({
+  id: '/tds-return-filing-delhi',
+  path: '/tds-return-filing-delhi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IncomeTaxReturnFilingDelhiRoute =
+  IncomeTaxReturnFilingDelhiRouteImport.update({
+    id: '/income-tax-return-filing-delhi',
+    path: '/income-tax-return-filing-delhi',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GstFilingServicesDelhiRoute = GstFilingServicesDelhiRouteImport.update({
+  id: '/gst-filing-services-delhi',
+  path: '/gst-filing-services-delhi',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -24,6 +51,18 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BusinessComplianceServicesRoute =
+  BusinessComplianceServicesRouteImport.update({
+    id: '/business-compliance-services',
+    path: '/business-compliance-services',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AccountingBookkeepingServicesRoute =
+  AccountingBookkeepingServicesRouteImport.update({
+    id: '/accounting-bookkeeping-services',
+    path: '/accounting-bookkeeping-services',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -38,39 +77,108 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/accounting-bookkeeping-services': typeof AccountingBookkeepingServicesRoute
+  '/business-compliance-services': typeof BusinessComplianceServicesRoute
   '/contact': typeof ContactRoute
+  '/gst-filing-services-delhi': typeof GstFilingServicesDelhiRoute
+  '/income-tax-return-filing-delhi': typeof IncomeTaxReturnFilingDelhiRoute
   '/services': typeof ServicesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/tds-return-filing-delhi': typeof TdsReturnFilingDelhiRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/accounting-bookkeeping-services': typeof AccountingBookkeepingServicesRoute
+  '/business-compliance-services': typeof BusinessComplianceServicesRoute
   '/contact': typeof ContactRoute
+  '/gst-filing-services-delhi': typeof GstFilingServicesDelhiRoute
+  '/income-tax-return-filing-delhi': typeof IncomeTaxReturnFilingDelhiRoute
   '/services': typeof ServicesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/tds-return-filing-delhi': typeof TdsReturnFilingDelhiRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/accounting-bookkeeping-services': typeof AccountingBookkeepingServicesRoute
+  '/business-compliance-services': typeof BusinessComplianceServicesRoute
   '/contact': typeof ContactRoute
+  '/gst-filing-services-delhi': typeof GstFilingServicesDelhiRoute
+  '/income-tax-return-filing-delhi': typeof IncomeTaxReturnFilingDelhiRoute
   '/services': typeof ServicesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/tds-return-filing-delhi': typeof TdsReturnFilingDelhiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/contact' | '/services'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/accounting-bookkeeping-services'
+    | '/business-compliance-services'
+    | '/contact'
+    | '/gst-filing-services-delhi'
+    | '/income-tax-return-filing-delhi'
+    | '/services'
+    | '/sitemap.xml'
+    | '/tds-return-filing-delhi'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact' | '/services'
-  id: '__root__' | '/' | '/about' | '/contact' | '/services'
+  to:
+    | '/'
+    | '/about'
+    | '/accounting-bookkeeping-services'
+    | '/business-compliance-services'
+    | '/contact'
+    | '/gst-filing-services-delhi'
+    | '/income-tax-return-filing-delhi'
+    | '/services'
+    | '/sitemap.xml'
+    | '/tds-return-filing-delhi'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/accounting-bookkeeping-services'
+    | '/business-compliance-services'
+    | '/contact'
+    | '/gst-filing-services-delhi'
+    | '/income-tax-return-filing-delhi'
+    | '/services'
+    | '/sitemap.xml'
+    | '/tds-return-filing-delhi'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AccountingBookkeepingServicesRoute: typeof AccountingBookkeepingServicesRoute
+  BusinessComplianceServicesRoute: typeof BusinessComplianceServicesRoute
   ContactRoute: typeof ContactRoute
+  GstFilingServicesDelhiRoute: typeof GstFilingServicesDelhiRoute
+  IncomeTaxReturnFilingDelhiRoute: typeof IncomeTaxReturnFilingDelhiRoute
   ServicesRoute: typeof ServicesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TdsReturnFilingDelhiRoute: typeof TdsReturnFilingDelhiRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/tds-return-filing-delhi': {
+      id: '/tds-return-filing-delhi'
+      path: '/tds-return-filing-delhi'
+      fullPath: '/tds-return-filing-delhi'
+      preLoaderRoute: typeof TdsReturnFilingDelhiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
@@ -78,11 +186,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/income-tax-return-filing-delhi': {
+      id: '/income-tax-return-filing-delhi'
+      path: '/income-tax-return-filing-delhi'
+      fullPath: '/income-tax-return-filing-delhi'
+      preLoaderRoute: typeof IncomeTaxReturnFilingDelhiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gst-filing-services-delhi': {
+      id: '/gst-filing-services-delhi'
+      path: '/gst-filing-services-delhi'
+      fullPath: '/gst-filing-services-delhi'
+      preLoaderRoute: typeof GstFilingServicesDelhiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-compliance-services': {
+      id: '/business-compliance-services'
+      path: '/business-compliance-services'
+      fullPath: '/business-compliance-services'
+      preLoaderRoute: typeof BusinessComplianceServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/accounting-bookkeeping-services': {
+      id: '/accounting-bookkeeping-services'
+      path: '/accounting-bookkeeping-services'
+      fullPath: '/accounting-bookkeeping-services'
+      preLoaderRoute: typeof AccountingBookkeepingServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -105,8 +241,14 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AccountingBookkeepingServicesRoute: AccountingBookkeepingServicesRoute,
+  BusinessComplianceServicesRoute: BusinessComplianceServicesRoute,
   ContactRoute: ContactRoute,
+  GstFilingServicesDelhiRoute: GstFilingServicesDelhiRoute,
+  IncomeTaxReturnFilingDelhiRoute: IncomeTaxReturnFilingDelhiRoute,
   ServicesRoute: ServicesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TdsReturnFilingDelhiRoute: TdsReturnFilingDelhiRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
