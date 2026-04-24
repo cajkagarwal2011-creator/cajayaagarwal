@@ -3,6 +3,43 @@ import { Toaster } from "@/components/ui/sonner";
 
 import appCss from "../styles.css?url";
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  name: "Jaya K. Agarwal & Co. — Chartered Accountants",
+  image: "https://cajayaagarwal.lovable.app/og-image.jpg",
+  "@id": "https://cajayaagarwal.lovable.app",
+  url: "https://cajayaagarwal.lovable.app",
+  telephone: "+91-7667559772",
+  email: "ca.jkagarwal2011@gmail.com",
+  priceRange: "₹₹",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "G-4, Malviya Nagar",
+    addressLocality: "New Delhi",
+    addressRegion: "Delhi",
+    postalCode: "110017",
+    addressCountry: "IN",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: 28.5355, longitude: 77.2106 },
+  areaServed: [
+    { "@type": "Place", name: "Malviya Nagar" },
+    { "@type": "Place", name: "Saket" },
+    { "@type": "Place", name: "Hauz Khas" },
+    { "@type": "Place", name: "South Delhi" },
+    { "@type": "Place", name: "Delhi NCR" },
+  ],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "10:00",
+      closes: "19:00",
+    },
+  ],
+  sameAs: [],
+};
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -30,21 +67,27 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "CA Jaya Agarwal" },
-      { name: "description", content: "A conversion-focused website for a Chartered Accountant firm, designed to generate leads and inquiries." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "CA Jaya Agarwal" },
-      { property: "og:description", content: "A conversion-focused website for a Chartered Accountant firm, designed to generate leads and inquiries." },
+      { title: "CA in Malviya Nagar Delhi | GST, ITR & Tax Consultant" },
+      {
+        name: "description",
+        content:
+          "Looking for a Chartered Accountant in Delhi? Get expert GST, ITR filing, tax planning & compliance services. Free consultation available.",
+      },
+      { name: "robots", content: "index, follow" },
+      { name: "author", content: "Jaya K. Agarwal & Co." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "CA Jaya Agarwal" },
-      { name: "twitter:description", content: "A conversion-focused website for a Chartered Accountant firm, designed to generate leads and inquiries." },
+      { property: "og:locale", content: "en_IN" },
+      { property: "og:site_name", content: "Jaya K. Agarwal & Co." },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: "https://cajayaagarwal.lovable.app/" },
+    ],
+    scripts: [
       {
-        rel: "stylesheet",
-        href: appCss,
+        type: "application/ld+json",
+        children: JSON.stringify(localBusinessSchema),
       },
     ],
   }),
