@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cajayaagarwal.lovable.app/sitemap.xml

@@ -60,7 +60,8 @@ export function Footer() {
             </li>
             <li>
               <a href="mailto:ca.jkagarwal2011@gmail.com" className="flex items-center gap-2 transition-colors hover:text-accent">
-                <Mail className="h-4 w-4 text-accent" /> ca.jkagarwal2011@gmail.com
+                <Mail className="h-4 w-4 text-accent" />
+                <span>ca.jkagarwal2011@gmail.com</span>
               </a>
             </li>
             <li>

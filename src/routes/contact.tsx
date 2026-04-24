@@ -48,6 +48,20 @@ function ContactPage() {
               <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
             </a>
           </div>
+          <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+            <iframe
+              title="Jaya K. Agarwal & Co. — Office Location, Malviya Nagar, New Delhi"
+              src="https://www.google.com/maps?q=Malviya+Nagar+New+Delhi&output=embed"
+              width="100%"
+              height="260"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <div className="p-4 text-sm text-muted-foreground">
+              Serving <strong className="text-primary">Malviya Nagar, Saket, Hauz Khas & South Delhi</strong>.
+            </div>
+          </div>
           <div className="rounded-2xl border border-border bg-primary p-6 text-primary-foreground">
             <h3 className="font-semibold">What happens next?</h3>
             <ol className="mt-3 space-y-2 text-sm text-primary-foreground/80">
