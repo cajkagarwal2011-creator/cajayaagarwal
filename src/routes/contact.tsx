@@ -3,7 +3,8 @@ import { Navbar, WHATSAPP_URL } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
 import { LeadForm } from "@/components/site/LeadForm";
-import { Mail, Phone, MapPin, MessageCircle, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -45,7 +46,7 @@ function ContactPage() {
               rel="noopener noreferrer"
               className="mt-6 inline-flex h-10 items-center justify-center gap-2 rounded-md bg-whatsapp px-6 text-sm font-medium text-whatsapp-foreground hover:opacity-90"
             >
-              <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+              <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
             </a>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
