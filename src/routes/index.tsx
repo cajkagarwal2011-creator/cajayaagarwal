@@ -189,9 +189,8 @@ function HomePage() {
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-accent">
               <ShieldCheck className="h-3.5 w-3.5" /> Chartered Accountants • Malviya Nagar, New Delhi
             </span>
-            <h1 className="mt-5 text-4xl font-bold leading-tight tracking-tight md:text-5xl">
-              Chartered Accountant in Malviya Nagar, Delhi —{" "}
-              <span className="text-accent">Save Tax & Avoid Penalties Without Stress</span>
+            <h1 className="mt-5 text-3xl font-bold leading-tight tracking-tight md:text-4xl">
+              <span className="text-accent">Save Tax & Avoid Penalties</span> — Without the Stress
             </h1>
             <p className="mt-5 max-w-xl text-base text-primary-foreground/85 md:text-lg">
               Simple, on-time help with <strong className="text-primary-foreground">GST filing, ITR, TDS and business compliance</strong> —
@@ -216,7 +215,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-whatsapp px-6 text-sm font-medium text-whatsapp-foreground transition-colors hover:opacity-90"
               >
-                <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+                <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
               </a>
             </div>
 
@@ -333,7 +332,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/20 bg-white/5 px-6 text-sm font-medium text-primary-foreground hover:bg-white/10"
               >
-                <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+                <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
               </a>
             </div>
           </div>
@@ -493,7 +492,7 @@ function HomePage() {
               rel="noopener noreferrer"
               className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-whatsapp px-6 text-sm font-medium text-whatsapp-foreground transition-colors hover:opacity-90"
             >
-              <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+              <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
             </a>
           </div>
         </div>
