@@ -25,10 +25,12 @@ import {
   Building2,
   ShoppingBag,
   UserRound,
+  AlertTriangle,
   PhoneCall,
   Upload,
   HeadphonesIcon,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { Navbar, WHATSAPP_URL } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
