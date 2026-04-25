@@ -25,8 +25,6 @@ import {
   Building2,
   ShoppingBag,
   UserRound,
-  MessageCircle,
-  AlertTriangle,
   PhoneCall,
   Upload,
   HeadphonesIcon,
