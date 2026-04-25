@@ -35,8 +35,7 @@ function ServicesPage() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <section className="bg-surface-alt border-b border-border">
-        <div class
-ame="mx-auto max-w-4xl px-4 py-16 text-center">
+        <div className="mx-auto max-w-4xl px-4 py-16 text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-accent">Our Services</p>
           <h1 className="mt-2 text-3xl font-bold text-primary md:text-4xl">Services that keep you compliant & stress-free</h1>
           <p className="mt-4 text-muted-foreground">From GST to audits — practical, on-time CA services for Indian businesses and professionals.</p>
