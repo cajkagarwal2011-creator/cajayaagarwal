@@ -10,7 +10,8 @@ import { Navbar, WHATSAPP_URL } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
 import { LeadForm } from "@/components/site/LeadForm";
-import { ArrowRight, CheckCircle2, MessageCircle, type LucideIcon } from "lucide-react";
+import { ArrowRight, CheckCircle2, type LucideIcon } from "lucide-react";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export type ServicePageContent = {
   eyebrow: string;
