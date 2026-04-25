@@ -110,6 +110,7 @@ const faqs = [
     q: "Can you maintain my monthly accounts and bookkeeping?",
     a: "Yes. We do monthly bookkeeping, bank reconciliation, GST reconciliation, and share clean MIS reports — so your books are always audit-ready and decision-ready.",
   },
+];
 
 const faqSchema = {
   "@context": "https://schema.org",
