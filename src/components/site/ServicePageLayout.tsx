@@ -50,7 +50,7 @@ export function ServicePageLayout({ content }: { content: ServicePageContent }) 
                 rel="noopener noreferrer"
                 className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-whatsapp px-6 text-sm font-medium text-whatsapp-foreground transition-colors hover:opacity-90"
               >
-                <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+                <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
               </a>
             </div>
           </div>
@@ -146,7 +146,7 @@ export function ServicePageLayout({ content }: { content: ServicePageContent }) 
                   rel="noopener noreferrer"
                   className="inline-flex h-10 items-center justify-center gap-2 rounded-md bg-whatsapp px-4 text-sm font-medium text-whatsapp-foreground hover:opacity-90"
                 >
-                  <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+                  <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
                 </a>
               </div>
             </div>
@@ -177,7 +177,7 @@ export function ServicePageLayout({ content }: { content: ServicePageContent }) 
               rel="noopener noreferrer"
               className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-whatsapp px-6 text-sm font-medium text-whatsapp-foreground hover:opacity-90"
             >
-              <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+              <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
             </a>
           </div>
         </div>
