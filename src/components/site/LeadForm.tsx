@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import { ShieldCheck, Clock } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { WHATSAPP_URL } from "./Navbar";
+import { supabase } from "@/integrations/supabase/client";
 
 const SERVICES = [
   "GST Filing",
@@ -41,9 +42,10 @@ const schema = z.object({
 export function LeadForm({ compact = false }: { compact?: boolean }) {
   const [loading, setLoading] = useState(false);
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     const parsed = schema.safeParse({
       name: fd.get("name"),
       phone: fd.get("phone"),
@@ -56,11 +58,21 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
       return;
     }
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      toast.success("Thanks! We'll reach out within 1 business day.");
-      (e.target as HTMLFormElement).reset();
-    }, 600);
+    const { error } = await supabase.from("leads").insert({
+      name: parsed.data.name,
+      phone: parsed.data.phone,
+      email: parsed.data.email || null,
+      service: parsed.data.service,
+      message: parsed.data.message || null,
+      source: typeof window !== "undefined" ? window.location.pathname : null,
+    });
+    setLoading(false);
+    if (error) {
+      toast.error("Could not send. Please try WhatsApp or call us.");
+      return;
+    }
+    toast.success("Thanks! We'll reach out within 1 business day.");
+    form.reset();
   }
 
   return (
