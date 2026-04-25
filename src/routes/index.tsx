@@ -77,7 +77,39 @@ const faqs = [
     q: "How do I get started with a Chartered Accountant in Delhi?",
     a: "Simply click on \"Talk to a CA\" or message us on WhatsApp. We'll understand your case and guide you from start to finish.",
   },
-];
+  // GST
+  {
+    q: "Who needs to file GST returns in India?",
+    a: "Any business registered under GST must file returns — even if there were no sales in a month. Missing a return leads to late fees and notices. We file GSTR-1, GSTR-3B, and annual returns on time, every time.",
+  },
+  {
+    q: "Can you fix old GST mismatches and pending returns?",
+    a: "Yes. We regularly clean up GSTR-2B mismatches, file pending returns, claim eligible input tax credit, and reply to GST notices to bring you fully compliant.",
+  },
+  // ITR
+  {
+    q: "Which ITR form should I use as a salaried person or freelancer?",
+    a: "Salaried individuals usually file ITR-1 or ITR-2. Freelancers and professionals typically file ITR-3 or ITR-4 (presumptive). We pick the right form, claim every deduction you qualify for, and file accurately.",
+  },
+  {
+    q: "Can you help me get a bigger income tax refund?",
+    a: "Yes. Most people miss deductions under 80C, 80D, HRA, home loan interest, and capital gains exemptions. We review your full picture and file in a way that maximizes your refund — legally.",
+  },
+  // TDS
+  {
+    q: "Do you handle TDS returns and Form 16 / 16A?",
+    a: "Yes. We compute TDS, deposit it on time, file quarterly returns (24Q, 26Q, 27Q), generate Form 16 and 16A, and fix TDS defaults or short deductions.",
+  },
+  // Business Compliance
+  {
+    q: "Do you handle ROC and MCA filings for Private Limited Companies and LLPs?",
+    a: "Yes. We handle company / LLP incorporation, annual ROC filings (AOC-4, MGT-7), Director KYC, DIR-3, and other MCA compliances so your company stays in good standing.",
+  },
+  // Bookkeeping
+  {
+    q: "Can you maintain my monthly accounts and bookkeeping?",
+    a: "Yes. We do monthly bookkeeping, bank reconciliation, GST reconciliation, and share clean MIS reports — so your books are always audit-ready and decision-ready.",
+  },
 
 const faqSchema = {
   "@context": "https://schema.org",
