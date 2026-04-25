@@ -6,8 +6,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   Receipt, FileText, Wallet, ShieldCheck, BookOpenCheck,
-  ClipboardCheck, Lightbulb, MessageCircle, CheckCircle2,
+  ClipboardCheck, Lightbulb, CheckCircle2,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -35,7 +36,8 @@ function ServicesPage() {
       <Navbar />
       <section className="bg-surface-alt border-b border-border">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center">
-          <h1 className="text-4xl font-bold text-primary md:text-5xl">Services that keep you compliant & stress-free</h1>
+          <p className="text-sm font-semibold uppercase tracking-wider text-accent">Our Services</p>
+          <h1 className="mt-2 text-3xl font-bold text-primary md:text-4xl">Services that keep you compliant & stress-free</h1>
           <p className="mt-4 text-muted-foreground">From GST to audits — practical, on-time CA services for Indian businesses and professionals.</p>
         </div>
       </section>
@@ -73,7 +75,7 @@ function ServicesPage() {
               <Link to="/contact">Book Free Consultation</Link>
             </Button>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-10 items-center justify-center gap-2 rounded-md bg-whatsapp px-6 text-sm font-medium text-whatsapp-foreground hover:opacity-90">
-              <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+              <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
             </a>
           </div>
         </div>

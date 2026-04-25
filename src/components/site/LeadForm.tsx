@@ -6,7 +6,18 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { ShieldCheck, Clock } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { WHATSAPP_URL } from "./Navbar";
+
+const SERVICES = [
+  "GST Filing",
+  "Income Tax Return (ITR)",
+  "TDS Filing",
+  "Business Compliance (ROC, MCA)",
+  "Accounting & Bookkeeping",
+  "Tax Planning & Advisory",
+  "Other / Not sure",
+] as const;
 
 const schema = z.object({
   name: z.string().trim().min(2, "Please enter your name").max(100),
@@ -16,6 +27,7 @@ const schema = z.object({
     .min(7, "Enter a valid phone number")
     .max(20)
     .regex(/^[0-9+\-\s()]+$/, "Enter a valid phone number"),
+  service: z.string().trim().min(1, "Please select a service"),
   email: z
     .string()
     .trim()
@@ -35,6 +47,7 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
     const parsed = schema.safeParse({
       name: fd.get("name"),
       phone: fd.get("phone"),
+      service: fd.get("service") ?? "",
       email: fd.get("email") ?? "",
       message: fd.get("message") ?? "",
     });
@@ -76,6 +89,21 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
           className="h-11"
         />
       </div>
+      <div className="space-y-1.5">
+        <Label htmlFor="service">Service required</Label>
+        <select
+          id="service"
+          name="service"
+          required
+          defaultValue=""
+          className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+        >
+          <option value="" disabled>Select a service</option>
+          {SERVICES.map((s) => (
+            <option key={s} value={s}>{s}</option>
+          ))}
+        </select>
+      </div>
       {!compact && (
         <>
           <div className="space-y-1.5">
@@ -106,9 +134,9 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-11 items-center justify-center rounded-md bg-whatsapp px-4 text-sm font-medium text-whatsapp-foreground transition-colors hover:opacity-90"
+          className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-whatsapp px-4 text-sm font-medium text-whatsapp-foreground transition-colors hover:opacity-90"
         >
-          Chat on WhatsApp
+          <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
         </a>
       </div>
       <div className="space-y-1.5 pt-1">

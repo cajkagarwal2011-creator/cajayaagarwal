@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Calculator, Mail, Phone, MapPin, MessageCircle, ArrowRight } from "lucide-react";
+import { Calculator, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { WHATSAPP_URL } from "./Navbar";
 
 export function Footer() {
@@ -24,7 +25,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="inline-flex h-10 items-center justify-center gap-1.5 rounded-md bg-whatsapp px-5 text-sm font-medium text-whatsapp-foreground transition-colors hover:opacity-90"
             >
-              <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+              <WhatsAppIcon className="h-4 w-4" /> Chat on WhatsApp
             </a>
           </div>
         </div>
@@ -71,7 +72,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 transition-colors hover:text-accent"
               >
-                <MessageCircle className="h-4 w-4 text-accent" /> WhatsApp Chat
+                <WhatsAppIcon className="h-4 w-4 text-accent" /> WhatsApp Chat
               </a>
             </li>
             <li className="flex items-start gap-2">
