@@ -14,7 +14,7 @@ const faqs = [
 const content: ServicePageContent = {
   icon: FileText,
   eyebrow: "Income Tax Return Filing in Delhi",
-  h1: "Income Tax Return Filing in Delhi — Maximize Your Tax Savings, Legally",
+  h1: "Maximize Your Tax Savings, Legally",
   intro:
     "Accurate ITR filing in Delhi by experienced Chartered Accountants. We claim every deduction you qualify for, file on time, and help you save more — without any stress.",
   body: [

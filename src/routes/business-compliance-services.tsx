@@ -14,7 +14,7 @@ const faqs = [
 const content: ServicePageContent = {
   icon: ShieldCheck,
   eyebrow: "Business Compliance (ROC, MCA) in Delhi",
-  h1: "Business Compliance Services in Delhi — ROC, MCA & Company Law Made Simple",
+  h1: "ROC, MCA & Company Law Made Simple",
   intro:
     "End-to-end ROC and MCA compliance services in Delhi by experienced Chartered Accountants. Annual filings, event-based forms, director changes, incorporation — all handled on time.",
   body: [

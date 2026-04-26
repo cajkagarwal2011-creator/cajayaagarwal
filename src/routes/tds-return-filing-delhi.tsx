@@ -14,7 +14,7 @@ const faqs = [
 const content: ServicePageContent = {
   icon: Wallet,
   eyebrow: "TDS Return Filing in Delhi",
-  h1: "TDS Return Filing in Delhi — Accurate, On-Time, Penalty-Free",
+  h1: "Accurate, On-Time, Penalty-Free",
   intro:
     "Quarterly TDS return filing in Delhi by experienced Chartered Accountants. Correct PAN, correct sections, on-time filing, and quick corrections — no late fees, no notices.",
   body: [
