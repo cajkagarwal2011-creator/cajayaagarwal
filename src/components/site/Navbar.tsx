@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { Calculator, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import caLogo from "@/assets/ca-india-logo.png";
 
 const WHATSAPP_URL = "https://wa.me/917667559772";
 
@@ -18,8 +19,11 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-md">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2 font-semibold text-primary">
-          <Calculator className="h-5 w-5 text-accent" />
-          <span className="tracking-tight">Jaya K. Agarwal &amp; Co.</span>
+          <img src={caLogo} alt="CA India logo" className="h-9 w-auto" />
+          <span className="flex flex-col leading-tight">
+            <span className="tracking-tight">Jaya K. Agarwal &amp; Co.</span>
+            <span className="text-[10px] font-normal text-muted-foreground">Empowering Growth Through Financial Clarity</span>
+          </span>
         </Link>
         <div className="hidden items-center gap-7 md:flex">
           {links.map((l) => (
