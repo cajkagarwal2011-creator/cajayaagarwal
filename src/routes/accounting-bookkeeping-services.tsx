@@ -14,7 +14,7 @@ const faqs = [
 const content: ServicePageContent = {
   icon: BookOpenCheck,
   eyebrow: "Accounting & Bookkeeping in Delhi",
-  h1: "Accounting & Bookkeeping Services in Delhi — Clean Books, Zero Audit Stress",
+  h1: "Clean Books, Zero Audit Stress",
   intro:
     "Reliable monthly accounting and bookkeeping services in Delhi by experienced Chartered Accountants. Accurate numbers, monthly reports, and books that are always audit-ready.",
   body: [

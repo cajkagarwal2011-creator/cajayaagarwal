@@ -14,7 +14,7 @@ const faqs = [
 const content: ServicePageContent = {
   icon: Receipt,
   eyebrow: "GST Filing Services in Delhi",
-  h1: "GST Filing Services in Delhi — File On Time, Avoid Penalties",
+  h1: "File On Time, Avoid Penalties",
   intro:
     "Stress-free monthly GST filing in Delhi by experienced Chartered Accountants. Accurate returns, full ITC, no missed deadlines, no surprise notices.",
   body: [
